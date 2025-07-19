@@ -30,7 +30,7 @@ const handleLogIn = async (e)=>{
     return handleError('All fields must be entered');
   }
   try{
-    const url = 'http://localhost:8080/auth/login';
+    const url = 'https://prodigy-fsd-01-api.vercel.app/login';
     const response = await fetch(url,{
       method : 'POST',
       headers : {
